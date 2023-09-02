@@ -21,7 +21,18 @@ function Str(elem)
     return elem
 end
 
+function Math(elem)
+    local text = elem.text
+    for key, value in pairs(replacements) do
+        text = text:gsub(key, value)
+    end
+    elem.text = text
+    return elem
+end
+
+
 return {
     {CodeBlock = CodeBlock},
-    {Str = Str}
+    {Str = Str},
+    {Math = Math}
 }
