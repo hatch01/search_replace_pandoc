@@ -1,10 +1,9 @@
-```{.replacements}
-cv:converge
-xyz:replacement_xyz
-# Add more replacements as needed
+```{.replace}
+co*rge:coucou
+phi:varphi
 ```
 
+converge
+phi
 cv
-xyz
-
-$cv$
+$phi$
